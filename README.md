@@ -1,5 +1,10 @@
 # HmcOutlets
 
+[![Coverage Status](https://coveralls.io/repos/AprenticeButchr/hmc_outlets/badge.svg?branch=master&service=github)](https://coveralls.io/github/AprenticeButchr/hmc_outlets?branch=master)
+
+[![Gem Version](https://badge.fury.io/rb/hmc_outlets.svg)](https://badge.fury.io/rb/hmc_outlets)
+
+[![Build Status](https://travis-ci.org/AprenticeButchr/hmc_outlets.svg?branch=v0.0.0)](https://travis-ci.org/AprenticeButchr/hmc_outlets)
 
 This a pretty simple gem that grabs HMC's certified list and gives back some simple information.
 
@@ -47,7 +52,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/hmc_outlets/fork )
+1. Fork it ( https://github.com/AprenticeButchr/hmc_outlets/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
