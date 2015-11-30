@@ -77,28 +77,7 @@ module HmcOutlets
   end
   
   def self.revoked_outlets
-    unless @revoked_outlets
-      @revoked_outlets = Array.new
-      outlets = outlets_page.css('table.outlettable tr')
-      outlets.each do |o|
-        if o.css('td:not(.removed)').size == 0
-          name = o.css('strong').map { |n| n.text.gsub(/[[:space:]]$/, '') }
-          phone = o.css('.tel').map { |n| n.text.gsub(/[[:space:]]$/, '') }
-          address = o.css('td[4]').map do |n| 
-            text = n.text
-            text.gsub!(/\t/, '')
-            text.gsub!(/,/, '')
-            text.split("\n")
-          end
-          street = address[0][0] if address[0]
-          city = address[0][1] if address[0]
-          county = address[0][2] if address[0]
-          postcode = address[0][3] if address[0]
-          @revoked_outlets << { name: name[0], phone: phone[0], street: street, city: city, county: county, postcode: postcode } if name[0]
-        end
-      end
-    end
-    @revoked_outlets
+    @revoked_outlets ||= outlets.select { |o| o[:status] == 'revoked' }
   end
   
   private
