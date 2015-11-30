@@ -14,15 +14,15 @@ module HmcOutlets
   end
   
   def self.outlet_list
-    @outlet_list ||= outlets_page.css('table.outlettable tr td strong').map { |name| name.text.gsub(/[[:space:]]$/, '') }
+    @outlet_list ||= outlets.map { |o| o[:name] }
   end
   
   def self.certified_outlet_list
-    @certified_outlet_list ||= outlets_page.css('table.outlettable tr td:not(.removed) strong').map { |name| name.text.gsub(/[[:space:]]$/, '') }
+    @certified_outlet_list ||= certified_outlets.map { |o| o[:name] }
   end
   
   def self.revoked_outlet_list
-    @removed_outlets ||= outlets_page.css('table.outlettable tr td.removed strong').map { |name| name.text.gsub(/[[:space:]]$/, '') }
+    @removed_outlets ||= revoked_outlets.map { |o| o[:name] }
   end
   
   def self.outlets
