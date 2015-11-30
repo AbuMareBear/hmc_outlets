@@ -17,9 +17,9 @@ describe HmcOutlets do
   end
   let(:certified_outlets) do 
     [ 
-      { name: "outlet 1", phone: "phonenumber1", street: "address1", city: "city1", county: "county1", postcode: "postcode1" },
-      { name: "outlet 2", phone: "phonenumber2", street: "address2", city: "city2", county: "county2", postcode: "postcode2" },
-      { name: "outlet 4", phone: "phonenumber4", street: "address4", city: "city4", county: "county4", postcode: "postcode4" }
+      { name: "outlet 1", phone: "phonenumber1", street: "address1", city: "city1", county: "county1", postcode: "postcode1", status: 'certified' },
+      { name: "outlet 2", phone: "phonenumber2", street: "address2", city: "city2", county: "county2", postcode: "postcode2", status: 'certified' },
+      { name: "outlet 4", phone: "phonenumber4", street: "address4", city: "city4", county: "county4", postcode: "postcode4", status: 'certified' }
     ]
   end
   let(:revoked_outlets) do 
