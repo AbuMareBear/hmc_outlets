@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Abdullah Hashim"]
   spec.email         = ["aprenticebutchr@gmail.com"]
   spec.summary       = "Gives some basic information on certified outlets"
-  spec.description   = "Checks against HMC's outlet page to determine if an outlet is certified, removed or otherwise."
+  spec.description   = "Checks against HMC's outlet page and collects data about outlets registered with HMC, including if they are certified or revoked."
   spec.homepage      = "https://github.com/AprenticeButchr/hmc_outlets"
   spec.license       = "MIT"
 

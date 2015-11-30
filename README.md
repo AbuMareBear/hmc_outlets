@@ -4,7 +4,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/hmc_outlets.svg)](https://badge.fury.io/rb/hmc_outlets)
 
-[![Build Status](https://travis-ci.org/AprenticeButchr/hmc_outlets.svg?branch=v0.0.0)](https://travis-ci.org/AprenticeButchr/hmc_outlets)
+[![Build Status](https://travis-ci.org/AprenticeButchr/hmc_outlets.svg?branch=v0.1.0)](https://travis-ci.org/AprenticeButchr/hmc_outlets)
 
 This a pretty simple gem that grabs HMC's certified list and gives back some simple information.
 
