@@ -16,9 +16,9 @@ describe HmcOutlets do
     end
   end
   
-  describe ".removed_outlets" do
-    it "returns an array of all removed outlets" do
-      expect(HmcOutlets.removed_outlets).to eq(removed_outlets)
+  describe ".revoked_outlet_list" do
+    it "returns an array of all revoked outlets" do
+      expect(HmcOutlets.revoked_outlet_list).to eq(removed_outlets)
     end
   end
   
