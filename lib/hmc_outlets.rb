@@ -9,7 +9,7 @@ module HmcOutlets
     certified_outlets.include?(outlet_name)
   end
   
-  def self.removed?(outlet_name)
+  def self.revoked?(outlet_name)
     removed_outlets.include?(outlet_name)
   end
   

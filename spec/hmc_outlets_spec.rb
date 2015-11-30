@@ -34,15 +34,15 @@ describe HmcOutlets do
     end
   end
   
-  describe ".removed?(outlet_name)" do
-    it "returns true if outlet has been removed from certification" do
-      expect(HmcOutlets.removed?(removed_outlets[0])).to be_truthy
+  describe ".revoked?(outlet_name)" do
+    it "returns true if outlet has had their certificate revoked" do
+      expect(HmcOutlets.revoked?(removed_outlets[0])).to be_truthy
     end 
-    it "returns false for certified outlets" do
-      expect(HmcOutlets.removed?(certified_outlets[0])).to be_falsey
+    it "returns false for currently certified outlets" do
+      expect(HmcOutlets.revoked?(certified_outlets[0])).to be_falsey
     end
     it "returns false for non-existant outlets" do
-      expect(HmcOutlets.removed?(non_existent_outlet)).to be_falsey
+      expect(HmcOutlets.revoked?(non_existent_outlet)).to be_falsey
     end
   end
 end
