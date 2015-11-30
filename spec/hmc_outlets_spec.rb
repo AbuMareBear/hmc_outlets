@@ -10,9 +10,9 @@ describe HmcOutlets do
   specify {expect(HmcOutlets::VERSION).not_to be nil }
   specify { expect(HmcOutlets::CERTIFIED_OUTLETS_URI).to eq "http://www.halalhmc.org/certified-outlets-results.htm#result" }
   
-  describe ".certified_outlets" do
+  describe ".certified_outlet_list" do
     it "returns an array of all certified outlets" do
-      expect(HmcOutlets.certified_outlets).to eq(certified_outlets)
+      expect(HmcOutlets.certified_outlet_list).to eq(certified_outlets)
     end
   end
   
